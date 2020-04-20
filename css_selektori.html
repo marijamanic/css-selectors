@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS selektori</title>
+    <style>
+        a[title~="Google"]{
+            color: green;
+        }
+        a[href^="http://www.link-group.eu"]{
+            color: red;
+        }
+        p1:nth-of-type(odd){
+            color: red;
+            display: block;
+            margin-bottom: 15px;
+        }
+        p1:nth-of-type(even){
+            color: blue;
+            display: block;
+            margin-bottom: 15px;
+        }
+        p2{
+            display: block;
+            margin-bottom: 15px;
+        }
+        p2::after{
+            content: "-NEW";
+            color: yellow;
+        }
+        #second-div:hover{
+            cursor: pointer;
+            font-style: italic;
+                 
+             }
+    </style>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="http://www.google.com" title="Google">Google</a>
+    <a href="http://www.google.com/doodles" title="Google Doodles">Google Doodles</a>
+    <a href="http://www.link-group.eu">Go to Link Group</a>
+    <h2>Subheading</h2>
+    <p2>Paragraph 2</p2>
+    <p2>Paragraph 3</p2>
+    <div id="first-div">
+        <h3>Sub Subheading</h3>
+        <p1>Paragraph 4</p1>
+        <p1>Paragraph 5</p1>
+        <p1>Paragraph 6</p1>
+        <p1>Paragraph 7</p1>
+        <p1>Paragraph 8</p1>
+        <p1>Paragraph 9</p1>
+        <div id="second-div">
+        <p1>Paragraph 10</p1>
+    </div>
+    </div>
+
+</html>
